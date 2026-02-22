@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Header / Image Banner -->
+    <div class="header">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"
+             class="banner">
+        <h1>Smart Expense Tracker</h1>
+    </div>
+
+    <!-- Main Grid Layout -->
+    <div class="grid">
+
+        <!-- Add Expense Card -->
+        <div class="card add-card">
+            <h2>Add Expense</h2>
+
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="category" placeholder="Category">
+            <input type="text" id="month" placeholder="Month">
+
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <!-- Reports Card -->
+        <div class="card report-card">
+            <h2>Reports</h2>
+
+            <div class="btn-group">
+                <button onclick="showTotal()">Total</button>
+                <button onclick="showCategory()">Category</button>
+                <button onclick="showMonthly()">Monthly</button>
+                <button onclick="showExpenses()">Show All</button>
+            </div>
+
+            <h3 id="output"></h3>
+            <ul id="expenseList"></ul>
+        </div>
+
+        <!-- Image Card (Decoration / Future Graph Space) -->
+        <div class="card image-card">
+            <h2>Insights</h2>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                 class="side-image">
+            <p>Track your spending smartly and stay financially strong.</p>
+        </div>
+
+    </div>
+
+</div>
+<footer class="footer">
+  <div class="footer-content">
+    <h2>Manoj_Niteesh</h2>
+    <p>Crafting clean and modern web interfaces.</p>
+
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 NMAMIT | All Rights Reserved
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
